@@ -28,7 +28,7 @@ function slideShow() {
   //pegando o id da imagem no html para poder carregar as imagens usando DOM
   document.getElementById('img').src = imagens[Index];
   //incremento das imagens e sua posição
-  Index = Index + 1;
+    Index++;
 
   //se a posição da imagem for imagem e a quantidade de imagens no array
 
@@ -36,7 +36,7 @@ function slideShow() {
     Index = 0;
   }
   //setTimeout é uma função que executa o tempo, nesse caso vai chamar função e aplicar o time
-  setTimeout(slideShow(), time);
+  setTimeout('slideShow()', time);
 }
 //executar toda a função
 slideShow();
