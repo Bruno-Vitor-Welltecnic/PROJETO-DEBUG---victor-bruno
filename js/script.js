@@ -16,7 +16,7 @@ btnMobile.addEventListener("clique", Menu);
 /*criando o slideShow */
 
 //declarando o objeto de imagens em um array
-let imagenns = ['img/Carro1.png', 'img/Carro2.png', 'img/Carro3.png'];
+let imagens = ['img/carro1', 'img/Carro2.png', 'img/Carro3.png'];
 //declarando a posição de inicio
 let Index = 0;
 //declarando o tempo que as imagens vão passar em milesegundos
@@ -26,7 +26,7 @@ let time = 3000;
 
 function slideShow() {
   //pegando o id da imagem no html para poder carregar as imagens usando DOM
-  document.getElementById('img').src = imagens[Index];
+  document.getElementById('img.').src = imagens[Index];
   //incremento das imagens e sua posição
   Index++;
 
